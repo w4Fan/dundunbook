@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">总收入 100.00</view>
+        <view class="page__desc">本周收入 0.00</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">上学</view>
+                <view class="weui-cell__ft">
+                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{workingDay}}">
+                        {{workingDay[index] || 0}}/5
+                    </picker>
+                </view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd">学汉字</view>
+                <view class="weui-cell__ft">
+                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{workingDay}}">
+                        {{workingDay[index] || 0}}/15
+                    </picker>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
